@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferretería y Electrónica</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1Z7P-wy1uiwrLJyK2AkCfkRK8Lvuccvk&callback=initMap" async defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="Logo">
+      </a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Catálogo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Acerca de</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+    <section class="container my-5 ">
+      <div class="row backTools pt-5 pb-5 pl-5 pr-5">
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
+            <h2 class="back-h2">Últimas novedades</h2>
+            <p class="back-p">Ya está aquí nuestra emocionante colección, repleta de herramientas de alta calidad para tus proyectos</p>
+            <button class="btn btn-primary">Ver Catálogo</button>
+        </div>
+      </div>
+    </section>
+
+  
+<section class="container my-5">
+    <h2 class="text-center mb-4" style="font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;">Novedades</h2>
+    <p class="text-center mb-4">Presentamos nuestra última colección de herramientas seleccionadas, diseñadas para añadir un toque de calidad y eficiencia a tus proyectos. Ahora disponibles ya en tienda.</p>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <img src="product1.jpg" alt="Producto 1" class="img-fluid">
+        <h5 class="mt-2">Martillo perforador</h5>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="product2.jpg" alt="Producto 2" class="img-fluid">
+        <h5 class="mt-2">Motosierra a batería</h5>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="product3.jpg" alt="Producto 3" class="img-fluid">
+        <h5 class="mt-2">Amoladora angular</h5>
+      </div>
+    </div>
+    <button class="btn btn-primary d-block mx-auto">Ver Catálogo</button>
+  </section>
+  
+  <section class="container mb-5">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <img src="product4.jpg" alt="Producto 4" class="img-fluid">
+        <h5 class="mt-2">Cargador de 50 A para baterías de 12 V, Truper</h5>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="product5.jpg" alt="Producto 5" class="img-fluid">
+        <h5 class="mt-2">Compresor 20 L, 2-1/2 HP (potencia máxima), 127 V, Pretul</h5>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="product6.jpg" alt="Producto 6" class="img-fluid">
+        <h5 class="mt-2">Herramienta rotativa profesional 150 W con 201 accesorios</h5>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero ">
+    <div class="container ">
+      <div class="row backHunter pt-5 pb-5 pl-5 pr-5" >
+        
+        <div class="col-md-12" style="padding-right: 5%;">
+            <h2 class="back-h2">Adéntrate en un reino lleno de oportunidades en el territorio de la casería</h2>
+            <a href="#" class="btn btn-primary float-right " >Más información</a>        
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <div class="container">
+      <h2 style="font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;">Dónde encontrarnos</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p>En Ferretería y Electrónica La Casa del Detector, nuestra pasión es brindar a nuestros clientes una experiencia única y completa en la adquisición de productos de alta calidad. Nuestro establecimiento es el destino ideal para quienes buscan artículos de confianza de la reconocida marca Truper, así como para los amantes de la pesca, los aficionados al bricolaje y los entusiastas de la electrónica.</p>
+          <p>Dirección: Filomeno Medina #479 Colima centro</p>
+          <p>Horario: De Lunes a Viernes de 10 am a 8 pm y Sábados de 10 am a 4 pm</p>
+          <p>Teléfono: 312-307-5848, 314-119-3358</p>
+          <p>Email: <a href="mailto:lacasadeldetector@gmail.com">lacasadeldetector@gmail.com</a></p>
+        </div>
+        <div class="col-md-6">
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-light py-3">
+    <div class="container">
+      <p class="text-center mb-0">&copy; 2024 Ferretería y Electrónica</p>
+    </div>
+  </footer>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function initMap() {
+  var myLatLng = { lat: 19.249603254044395, lng: -103.72005839770515 }; // Coordenadas de Filomeno Medina #479, Colima
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 16,
+    center: myLatLng
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Ferretería y Electrónica La Casa del Detector'
+  });
+}
+  </script>
+</body>
+</html>
