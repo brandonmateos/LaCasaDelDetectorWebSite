@@ -1,7 +1,12 @@
 body {
     font-family: Arial, sans-serif;
 }
-
+.titulo {
+    font-family: Lieterata;
+    font-size: clamp(1.146rem, 1.146rem + ((1vw - 0.2rem) * 1.189), 1.8rem);
+    font-style: normal;
+    letter-spacing: -0.06rem;
+}
 .navbar {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -52,6 +57,13 @@ body {
 
 .backTools {
     background-image: url("img/herramientas.png");
+    /*expandir imagen e toda la pantalla*/
+    background-size: cover;
+    /*centrar imagen*/
+    background-position: center;
+    /*fijar imagen*/
+    background-attachment: fixed;
+   
 }
 
 .back-h2 {
@@ -69,4 +81,121 @@ body {
 
 .backHunter{
     background-image: url("img/caceria.jpg");
+     /*expandir imagen e toda la pantalla*/
+     background-size: cover;
+     /*centrar imagen*/
+     background-position: center;
+     /*fijar imagen*/
+     background-attachment: fixed;
+}
+
+
+
+/* Path: FOOTER */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logoFooter {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .social-links {
+    display: flex;
+  }
+  
+  .social-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  
+  .footer-text {
+    text-align: right;
+  }
+  
+  .footer-text p {
+    margin: 5px 0;
+  }
+
+
+  /*Contact with me*/
+.cardWM {
+    margin: 0 auto;
+  
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  }
+  
+  /* for all social containers*/
+  .socialContainerWM {
+    width: 52px;
+    height: 52px;
+    /* border-radius: 50%;   para que sea circular*/
+    border-radius: 5px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+  }
+
+  /* Facebook */
+.containerOne:hover {
+    background-color: #3b5998;
+    transition-duration: 0.3s;
+  }
+
+  /* Instagram */
+.containerThree:hover {
+    background-color: #d62976;
+    transition-duration: 0.3s;
+  }
+
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+
+
+  /* Path: carousel.css */
+  #carouselExampleCaptions {
+    width: 100%; /* Opcional: si quieres que el carousel ocupe el 100% del ancho de su contenedor */
+    max-width: 100%; /* Opcional: si deseas que el carousel tenga un ancho máximo */
+    height: 300px; /* Aquí defines la altura fija para el carousel, puedes ajustar este valor según tus necesidades */
+}
+
+.carousel-item img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain; /* Esto asegura que la imagen se ajuste dentro del espacio disponible manteniendo su relación de aspecto */
 }
