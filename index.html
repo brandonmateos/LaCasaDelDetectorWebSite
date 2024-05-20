@@ -1,77 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Ferretería y Electrónica La Casa del Detector - Herramientas y productos de alta calidad para tus proyectos.">
   <title>Ferretería y Electrónica</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header class="px-4">
-    
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand " href="index.html">
-          <img src="img/logo.png" alt="Logo">
-        </a>
-        <h1 class="titulo">Ferreteria y Electronica</h1>
-        
-
-        
-        <ul class="navbar-nav ms-auto text-right"  >
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="catalogo.html">Catálogo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Acerca de</a>
-          </li>
-
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              Idioma
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Español</a></li>
-              <li><a class="dropdown-item" href="#">Ingles</a></li>
-            </ul>
-          </div>
-
-        </ul>
-      </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" alt="Logo de Ferretería y Electrónica La Casa del Detector">
+      </a>
+      <h1 class="titulo">Ferreteria y Electronica</h1>
+      <ul class="navbar-nav ms-auto text-right">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="catalogo.html">Catálogo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Acerca de</a>
+        </li>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Idioma
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Español</a></li>
+            <li><a class="dropdown-item" href="#">Inglés</a></li>
+          </ul>
+        </div>
+      </ul>
+    </nav>
   </header>
 
-
   <!--Carousel-->
-
-  <div id="carouselExampleDark" class="carousel carousel-dark slide " data-bs-ride="carousel" data-bs-interval="5000">
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="5000">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="/img/carousel1.png" class="d-block w-100" alt="...">
-        <!--<div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>-->
-      </div>
-      <div class="carousel-item" >
-        <img src="/img/carousel2.png" class="d-block w-100" alt="...">
-        <!--<div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>-->
+        <img src="/img/carousel1.png" class="d-block w-100" alt="Primera imagen del carrusel">
       </div>
       <div class="carousel-item">
-        <img src="/img/carousel3.jpg" class="d-block w-100" alt="...">
-        <!--<div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>-->
+        <img src="/img/carousel2.png" class="d-block w-100" alt="Segunda imagen del carrusel">
+      </div>
+      <div class="carousel-item">
+        <img src="/img/carousel3.jpg" class="d-block w-100" alt="Tercera imagen del carrusel">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
@@ -84,164 +72,303 @@
     </button>
   </div>
 
-
-
-  
   <section class="container my-5">
-      <div class="row backTools pt-5 pb-5 pl-5 pr-5">
-        <div class="col-md-6">
-        </div>
-        <div class="col-md-6">
-            <h2 class="back-h2">Últimas novedades</h2>
-            <p class="back-p">Ya está aquí nuestra emocionante colección, repleta de herramientas de alta calidad para tus proyectos</p>
-            <button class="btn btn-primary">Ver Catálogo</button>
-        </div>
+    <div class="row backTools pt-5 pb-5 pl-5 pr-5">
+      <div class="col-md-6"></div>
+      <div class="col-md-6">
+        <h2 class="back-h2">Últimas novedades</h2>
+        <p class="back-p">Ya está aquí nuestra emocionante colección, repleta de herramientas de alta calidad para tus
+          proyectos</p>
+        <button class="btn btn-primary">Ver Catálogo</button>
       </div>
-</section>
+    </div>
+  </section>
 
-  
-<section class="container my-5">
-  
-    <h2 class="text-center mb-4" style="font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;">Novedades</h2>
-    <p class="text-center mb-4">Presentamos nuestra última colección de herramientas seleccionadas, diseñadas para añadir un toque de calidad y eficiencia a tus proyectos. Ahora disponibles ya en tienda.</p>
+  <section class="container my-5">
+    <h2 class="text-center mb-4" style="font-size: 36px; font-weight: bold; margin-bottom: 20px;">Novedades</h2>
+    <p class="text-center mb-4">Presentamos nuestra última colección de herramientas seleccionadas, diseñadas para
+      añadir un toque de calidad y eficiencia a tus proyectos. Ahora disponibles ya en tienda.</p>
     <div class="row">
       <div class="col-md-4 mb-4">
-        <img src="product1.jpg" alt="Producto 1" class="img-fluid">
+        <img src="product1.jpg" alt="Martillo perforador" class="img-fluid">
         <h5 class="mt-2">Martillo perforador</h5>
       </div>
       <div class="col-md-4 mb-4">
-        <img src="product2.jpg" alt="Producto 2" class="img-fluid">
+        <img src="product2.jpg" alt="Motosierra a batería" class="img-fluid">
         <h5 class="mt-2">Motosierra a batería</h5>
       </div>
       <div class="col-md-4 mb-4">
-        <img src="product3.jpg" alt="Producto 3" class="img-fluid">
+        <img src="product3.jpg" alt="Amoladora angular" class="img-fluid">
         <h5 class="mt-2">Amoladora angular</h5>
       </div>
     </div>
     <button class="btn btn-primary d-block mx-auto">Ver Catálogo</button>
   </section>
-  
+
   <section class="container mb-5">
     <div class="row">
       <div class="col-md-4 mb-4">
-        <img src="product4.jpg" alt="Producto 4" class="img-fluid">
+        <img src="product4.jpg" alt="Cargador de 50 A para baterías de 12 V, Truper" class="img-fluid">
         <h5 class="mt-2">Cargador de 50 A para baterías de 12 V, Truper</h5>
       </div>
       <div class="col-md-4 mb-4">
-        <img src="product5.jpg" alt="Producto 5" class="img-fluid">
+        <img src="product5.jpg" alt="Compresor 20 L, 2-1/2 HP (potencia máxima), 127 V, Pretul" class="img-fluid">
         <h5 class="mt-2">Compresor 20 L, 2-1/2 HP (potencia máxima), 127 V, Pretul</h5>
       </div>
       <div class="col-md-4 mb-4">
-        <img src="product6.jpg" alt="Producto 6" class="img-fluid">
+        <img src="product6.jpg" alt="Herramienta rotativa profesional 150 W con 201 accesorios" class="img-fluid">
         <h5 class="mt-2">Herramienta rotativa profesional 150 W con 201 accesorios</h5>
       </div>
     </div>
   </section>
 
-
-  <section class="hero ">
-    <div class="container ">
-      <div class="row backHunter pt-5 pb-5 pl-5 pr-5" >
-        
-        <div class="col-md-12" style="padding-right: 5%;">
-            <h2 class="back-h2">Adéntrate en un reino lleno de oportunidades en el territorio de la casería</h2>
-            <a href="#" class="btn btn-primary float-right " >Más información</a>        
-        </div>
-      </div>
-      </div>
-    </div>
-  </section>
-
-<section class="map-section">
+  <!--caseria-->
+  <section class="hero">
     <div class="container">
-      <h2 style="font-size: 36px;
-      font-weight: bold;
-      margin-bottom: 20px;">Dónde encontrarnos</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <p>En Ferretería y Electrónica La Casa del Detector, nuestra pasión es brindar a nuestros clientes una experiencia única y completa en la adquisición de productos de alta calidad. Nuestro establecimiento es el destino ideal para quienes buscan artículos de confianza de la reconocida marca Truper, así como para los amantes de la pesca, los aficionados al bricolaje y los entusiastas de la electrónica.</p>
-          <p>Dirección: Filomeno Medina #479 Colima centro</p>
-          <p>Horario: De Lunes a Viernes de 10 am a 8 pm y Sábados de 10 am a 4 pm</p>
-          <p>Teléfono: 312-307-5848, 314-119-3358</p>
-          <p>Email: <a href="mailto:lacasadeldetector@gmail.com">lacasadeldetector@gmail.com</a></p>
-        </div>
-        <div class="col-md-6">
-          <div id="map"></div>
+      <div class="row backHunter pt-5 pb-5 pl-5 pr-5">
+        <div class="col-md-12" style="padding-right: 5%;">
+          <h2 class="back-h2">Adéntrate en un reino lleno de oportunidades en el territorio de la casería</h2>
+          <a href="#" class="btn btn-primary float-right">Más información</a>
         </div>
       </div>
     </div>
   </section>
-  
-  <footer>
-    <div class="footer-container">
-      <div class="logoFooter">La Casa Del Detector</div>
-      <div class="social-links">
 
- <!--facebook-->
- <div class="px-4">
-  <div class="cardWM">
-    <a
-      class="socialContainerWM containerOne"
-      href="https://www.facebook.com/LaCasaDelDetectorFE"
-      target="_blank"
-    >
-      <svg viewBox="0 0 16 16" class="socialSvg facebookSvg">
-        <path
-          fill="#3B5998"
-          d="M15 0H1C.447 0 0 .447 0 1v14c0 .553.447 1 1 1h7.857v-6.235H6.278V7.286h2.579V5.543c0-2.555 1.711-3.957 4.056-3.957 1.142 0 2.003.105 2.003.105l-.072 2.22h-1.132c-1.107 0-1.453.682-1.453 1.38v1.663h2.472l-.304 2.479H11.26V16H15c.553 0 1-.447 1-1V1c0-.553-.447-1-1-1z"
-        ></path>
-      </svg>
-    </a>
-  </div>
-</div>
-
- <!--instagram-->
- <div >
-  <div class="cardWM">
-    <a
-      class="socialContainerWM containerThree"
-      href="https://www.instagram.com/lacasadeldetectorcolima/"
-      target="_blank"
-    >
-      <svg viewBox="0 0 16 16" class="socialSvg instagramSvg">
-        <path
-          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-        ></path>
-      </svg>
-    </a>
-  </div>
-</div>
-
+  <section class="container my-5">
+    <h2 class="text-center mb-4" style="font-size: 36px; font-weight: bold; margin-bottom: 20px;">Novedades</h2>
+    <p class="text-center mb-4">Presentamos nuestra última colección de herramientas seleccionadas, diseñadas para
+      añadir un toque de calidad y eficiencia a tus proyectos. Ahora disponibles ya en tienda.</p>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <img src="product1.jpg" alt="Martillo perforador" class="img-fluid">
+        <h5 class="mt-2">Martillo perforador</h5>
       </div>
-      <div class="footer-text">
-        <p>Términos y condiciones</p>
-        <p>Aviso de privacidad</p>
-        <p>&copy; 2024 Ferreteria y Electronica La Casa Del Detector. Todos los derechos reservados.</p>
-        <p></p>
+      <div class="col-md-4 mb-4">
+        <img src="product2.jpg" alt="Motosierra a batería" class="img-fluid">
+        <h5 class="mt-2">Motosierra a batería</h5>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="product3.jpg" alt="Amoladora angular" class="img-fluid">
+        <h5 class="mt-2">Amoladora angular</h5>
       </div>
     </div>
-  </footer>
+    <button class="btn btn-primary d-block mx-auto">Ver Catálogo</button>
+  </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-  <script>
-    function initMap() {
-  var myLatLng = { lat: 19.249603254044395, lng: -103.72005839770515 }; // Coordenadas de Filomeno Medina #479, Colima
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 16,
-    center: myLatLng
-  });
+  <section class="container my-5">
+    <h2 class="text-center mb-4" style="font-size: 36px; font-weight: bold; margin-bottom: 20px;">Novedades</h2>
+    <p class="text-center mb-4">Presentamos nuestra última colección de herramientas seleccionadas, diseñadas para
+      añadir un toque de calidad y eficiencia a tus proyectos. Ahora disponibles ya en tienda.</p>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <img src="product1.jpg" alt="Martillo perforador" class="img-fluid">
+        <h5 class="mt-2">Martillo perforador</h5>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="product2.jpg" alt="Motosierra a batería" class="img-fluid">
+        <h5 class="mt-2">Motosierra a batería</h5>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="product3.jpg" alt="Amoladora angular" class="img-fluid">
+        <h5 class="mt-2">Amoladora angular</h5>
+      </div>
+    </div>
+    <button class="btn btn-primary d-block mx-auto">Ver Catálogo</button>
 
-  var marker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    title: 'Ferretería y Electrónica La Casa del Detector'
-  });
-}
-  </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1Z7P-wy1uiwrLJyK2AkCfkRK8Lvuccvk&callback=initMap" async defer></script>
+    <!--Marcas-->
+
+    <section>
+      <div class="container my-5">
+        <h2 class="text-center mb-4">Nuestras marcas</h2>
+        <div id="carouselMarcas" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+
+                <div class="col-md-3 mb-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <img src="https://www.truper.com/media/wysiwyg/home/brands/TRUPER_new.svg" alt="Truper">
+                      <p class="card-text">Herramientas con la mejor relación calidad-precio.</p>
+                      <a href="#" class="btn btn-primary">Ver catálogo</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <img src="https://www.truper.com/media/wysiwyg/home/brands/PRETUL.svg" alt="Pretul">
+                      <p class="card-text">Productos caseros diseñados para uso ligero y labores en el hogar.</p>
+                      <a href="#" class="btn btn-primary">Ver catálogo</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <img src="https://www.truper.com/media/wysiwyg/home/brands/VOLTECK.svg" alt="Volteck">
+                      <p class="card-text">Productos eléctricos para el mercado ferretero.</p>
+                      <a href="#" class="btn btn-primary">Ver catálogo</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <img src="https://www.truper.com/media/wysiwyg/home/brands/FOSET.svg" alt="FOSET">
+                      <p class="card-text">Productos para plomería, con 5 líneas para todas las necesidades.</p>
+                      <a href="#" class="btn btn-primary">Ver catálogo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              
+              <div class="row">
+                <div class="col-md-3 mb-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <img src="https://www.truper.com/media/wysiwyg/home/brands/FIERO.svg" alt="FIERO">
+                      <p class="card-text">Productos de acero para la industria ferretera.</p>
+                      <a href="#" class="btn btn-primary">Ver catálogo</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <img src="https://www.truper.com/media/wysiwyg/home/brands/KLINTEK.svg" alt="Klintek">
+                      <p class="card-text">Artículos de limpieza para el hogar o la oficina.</p>
+                      <a href="#" class="btn btn-primary">Ver catálogo</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <img src="img/minelabMarca.png" alt="Minelab">
+                      <p class="card-text">Suministro de tecnologías para la detección de metales.</p>
+                      <a href="#" class="btn btn-primary">Ver catálogo</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <img src="img/mendozaMarca.png" alt="Mendoza">
+                      <p class="card-text">La marca de tiro deportivo más grande de Mexico.</p>
+                      <a href="#" class="btn btn-primary">Ver catálogo</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselMarcas" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselMarcas" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--AcercaDe-->
+    <section class="map-section">
+      <div class="container">
+        <h2 style="font-size: 36px; font-weight: bold; margin-bottom: 20px;">Dónde encontrarnos</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <p>En Ferretería y Electrónica La Casa del Detector, nuestra pasión es brindar a nuestros clientes una
+              experiencia única y completa en la adquisición de productos de alta calidad. Nuestro establecimiento es el
+              destino ideal para quienes buscan artículos de confianza de la reconocida marca Truper, así como para los
+              amantes de la pesca, los aficionados al bricolaje y los entusiastas de la electrónica.</p>
+            <p>Dirección: Filomeno Medina #479 Colima centro</p>
+            <p>Horario: De Lunes a Viernes de 10 am a 8 pm y Sábados de 10 am a 4 pm</p>
+            <p>Teléfono: 312-307-5848, 314-119-3358</p>
+            <p>Email: <a href="mailto:lacasadeldetector@gmail.com">lacasadeldetector@gmail.com</a></p>
+          </div>
+          <div class="col-md-6">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--Footer-->
+    <footer>
+      <div class="footer-container">
+        <div class="logoFooter">La Casa Del Detector</div>
+        <div class="social-links">
+
+          <!--facebook-->
+          <div class="px-4">
+            <div class="cardWM">
+              <a class="socialContainerWM containerOne" href="https://www.facebook.com/LaCasaDelDetectorFE"
+                target="_blank">
+                <svg viewBox="0 0 16 16" class="socialSvg facebookSvg">
+                  <path fill="#3B5998"
+                    d="M15 0H1C.447 0 0 .447 0 1v14c0 .553.447 1 1 1h7.857v-6.235H6.278V7.286h2.579V5.543c0-2.555 1.711-3.957 4.056-3.957 1.142 0 2.003.105 2.003.105l-.072 2.22h-1.132c-1.107 0-1.453.682-1.453 1.38v1.663h2.472l-.304 2.479H11.26V16H15c.553 0 1-.447 1-1V1c0-.553-.447-1-1-1z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!--instagram-->
+          <div>
+            <div class="cardWM">
+              <a class="socialContainerWM containerThree" href="https://www.instagram.com/lacasadeldetectorcolima/"
+                target="_blank">
+                <svg viewBox="0 0 16 16" class="socialSvg instagramSvg">
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="footer-text">
+          <p>Términos y condiciones</p>
+          <p>Aviso de privacidad</p>
+          <p>&copy; 2024 Ferreteria y Electronica La Casa Del Detector. Todos los derechos reservados.</p>
+          <p></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+
+    <script>
+      function initMap() {
+        var myLatLng = { lat: 19.249603254044395, lng: -103.72005839770515 }; // Coordenadas de Filomeno Medina #479, Colima
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Ferretería y Electrónica La Casa del Detector'
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1Z7P-wy1uiwrLJyK2AkCfkRK8Lvuccvk&callback=initMap"
+      async defer></script>
 
 </body>
+
 </html>
