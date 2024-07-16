@@ -92,6 +92,7 @@ body {
 
 
 /* Path: FOOTER */
+
 footer {
     background-color: #000;
     color: #fff;
@@ -213,3 +214,29 @@ footer {
 .custom-carousel-inner .active {
   display: flex;
 }
+
+
+  .cardProduct {
+    width: 100%;
+    height: 70%;
+    background: #ffffff;
+    padding: 2rem 1.5rem;
+    transition: box-shadow .3s ease, transform .2s ease;
+   }
+   
+  
+   /*Hover*/
+   .cardProduct:hover {
+    box-shadow: 0 8px 50px #23232333;
+   }
+   
+   .card {
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem .5rem;
+    transition: box-shadow .3s ease, transform .2s ease;
+  }
+  
+  
