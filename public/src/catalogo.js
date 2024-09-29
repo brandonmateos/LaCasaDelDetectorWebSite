@@ -41,7 +41,6 @@ function displayProducts(productsToShow) {
                 <p class="product-availability ${product.availability ? '' : 'out-of-stock'}">
                     ${product.availability ? 'Disponible' : 'No disponible'}
                 </p>
-                <!--<p class="product-price">Precio: $${product.price.toFixed(2)}</p>-->
             </div>
         `;
         productList.appendChild(productCard);

@@ -1,30 +1,28 @@
+require('dotenv').config(); // Asegúrate de cargar las variables de entorno al inicio
 const express = require('express');
-const sqlite3 = require('sqlite3').verbose();
+const { Pool } = require('pg'); // Importa el cliente de PostgreSQL
 const path = require('path');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
-// Servir archivos estáticos desde el directorio 'public'
-app.use(express.static(path.join(__dirname, 'public')));
-
-// Conectar a la base de datos SQLite
-const db = new sqlite3.Database(path.join(__dirname, 'ferreteria.db'), (err) => {
-    if (err) {
-        console.error(err.message);
-    }
-    console.log('Conectado a la base de datos SQLite.');
+// Configura la conexión a PostgreSQL
+const pool = new Pool({
+  connectionString: process.env.POSTGRES_URL,
 });
 
+// Configura los archivos estáticos
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Endpoint para obtener todos los productos
-app.get('/api/products', (req, res) => {
-    db.all("SELECT * FROM products", [], (err, rows) => {
-        if (err) {
-            res.status(500).json({ error: err.message });
-            return;
-        }
-        console.log('Productos recuperados:', rows);
-        res.json(rows);
-    });
+app.get('/api/products', async (req, res) => {
+    try {
+        const result = await pool.query("SELECT * FROM products");
+        console.log('Productos recuperados:', result.rows);
+        res.json(result.rows);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: err.message });
+    }
 });
 
 // Ruta para la página principal
