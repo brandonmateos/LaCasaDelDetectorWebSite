@@ -27,15 +27,11 @@ Sigue estos pasos para clonar el repositorio, instalar las dependencias y ejecut
 
 Utiliza el siguiente comando para clonar el repositorio en tu máquina local:
 
-.. code-block::
-
     git clone https://github.com/usuario/nombre-del-repositorio.git
 
 ### 2. Navega al directorio del proyecto
 
 Dirígete a la carpeta del proyecto que acabas de clonar:
-
-.. code-block::
 
     cd nombre-del-repositorio
 
@@ -43,23 +39,17 @@ Dirígete a la carpeta del proyecto que acabas de clonar:
 
 Ejecuta el siguiente comando para instalar todas las dependencias necesarias:
 
-.. code-block::
-
     npm install
 
 ### 4. Ejecuta el servidor
 
 Una vez instaladas las dependencias y configuradas las variables de entorno, ejecuta el siguiente comando para iniciar el servidor:
 
-.. code-block::
-
     node server.js
 
 ### 5. Accede a la aplicación
 
 Con el servidor en funcionamiento, puedes acceder a la aplicación a través de tu navegador web en:
-
-.. code-block::
 
     http://localhost:3000
 
