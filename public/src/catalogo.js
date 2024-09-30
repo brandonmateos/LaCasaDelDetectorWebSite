@@ -34,7 +34,7 @@ function displayProducts(productsToShow) {
         productCard.innerHTML = `
             <div class="product-card">
                 <img src="/${product.image}" alt="${product.name}" class="product-image">
-                <h3 class="product-name">${product.name}</h3>
+                <h4 class="product-name">${product.name}</h3>
                 <p class="product-brand">Marca: ${product.brand}</p>
                 <p class="product-code">Código: ${product.code}</p>
                 <p class="product-category">Categoría: ${product.category}</p>
@@ -46,6 +46,8 @@ function displayProducts(productsToShow) {
         productList.appendChild(productCard);
     });
 }
+
+
 
 // Función para actualizar los filtros
 function updateFilters() {

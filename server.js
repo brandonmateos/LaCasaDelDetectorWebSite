@@ -5,7 +5,6 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Configura la conexión a PostgreSQL
 const pool = new Pool({
   connectionString: process.env.POSTGRES_URL,
 });
@@ -37,6 +36,4 @@ app.use((req, res, next) => {
 });
 
 // Iniciar el servidor
-app.listen(port, () => {
-    console.log(`Servidor corriendo en http://localhost:${port}`);
-});
+module.exports = app;
