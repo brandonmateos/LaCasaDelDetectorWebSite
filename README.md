@@ -19,6 +19,8 @@ Este proyecto está construido con:
 - **CSS3**: Para el diseño y la presentación.
 - **Bootstrap 5**: Para la interfaz y el diseño responsive.
 - **JavaScript**: Para la interactividad del sitio.
+- **PostgreSql**: Para la base de datos.
+
 ## Instalación y Configuración
 
 Sigue estos pasos para clonar el repositorio, instalar las dependencias y ejecutar la aplicación en tu entorno local.
@@ -41,13 +43,39 @@ Ejecuta el siguiente comando para instalar todas las dependencias necesarias:
 
     npm install
 
-### 4. Ejecuta el servidor
+### 4. Agrega conexion a Base De datos
+
+Agregamos un archivo .env en donde se agregara la conexion a PosgreSQL con la siguiente estructura;
+
+    postgres://username:password@hostname:port/dbname
+
+### 5. Estructura de query
+
+La estructura que manejara el query que se usara es la siguiente:
+
+    DROP TABLE IF EXISTS products;
+
+    CREATE TABLE products (
+        id SERIAL PRIMARY KEY,
+        name VARCHAR(255) NOT NULL,
+        brand VARCHAR(255) NOT NULL,
+        code VARCHAR(50) NOT NULL,
+        category VARCHAR(255) NOT NULL,
+        availability BOOLEAN NOT NULL,
+        price NUMERIC(10, 2) NOT NULL,
+        image TEXT NOT NULL
+    );
+
+    INSERT INTO products (name, brand, code, category, availability, price, image) VALUES
+    ('Destornillador de precisión', 'Truper', 'TRUP-001', 'Herramientas manuales', TRUE, 5.99, 'img/ROTI-20A.jpg');
+
+### 6. Ejecuta el servidor
 
 Una vez instaladas las dependencias y configuradas las variables de entorno, ejecuta el siguiente comando para iniciar el servidor:
 
     node server.js
 
-### 5. Accede a la aplicación
+### 7. Accede a la aplicación
 
 Con el servidor en funcionamiento, puedes acceder a la aplicación a través de tu navegador web en:
 

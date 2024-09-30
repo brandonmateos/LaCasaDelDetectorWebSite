@@ -5,12 +5,24 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
+// Configura los archivos estáticos
+
+app.use(express.static(path.join(__dirname, 'public')));
+
 const pool = new Pool({
   connectionString: process.env.POSTGRES_URL,
 });
 
-// Configura los archivos estáticos
-app.use(express.static(path.join(__dirname, 'public')));
+// Verificación de la conexión a la base de datos
+pool.connect((err, client, release) => {
+    if (err) {
+      console.error('Error al conectar a la base de datos:', err.stack);
+    } else {
+      console.log('Conexión exitosa a PostgreSQL');
+      release(); // Suelta el cliente después de la prueba de conexión
+    }
+  });
+
 
 // Endpoint para obtener todos los productos
 app.get('/api/products', async (req, res) => {
@@ -36,4 +48,11 @@ app.use((req, res, next) => {
 });
 
 // Iniciar el servidor
-module.exports = app;
+if (process.env.NODE_ENV !== 'production') {
+    app.listen(port, () => {
+      console.log(`Servidor corriendo en http://localhost:${port}`);
+    });
+  }
+  
+  module.exports = app;
+  
