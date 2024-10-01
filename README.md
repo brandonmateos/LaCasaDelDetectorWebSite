@@ -1,5 +1,8 @@
 # Ferretería y Electrónica La Casa del Detector
 
+| <img src="https://github.com/brandonmateos/LaCasaDelDetectorWebSite/blob/main/public/img/logoFBlanco.png" alt="Logo" width="200"> | Descubre más sobre el proyecto visitando la página de la [La Casa del Detector](https://la-casa-del-detector-web-site.vercel.app/) para más información. |
+|:---:|---:|
+
 ## Descripción
 
 Bienvenido al sitio web de **Ferretería y Electrónica La Casa del Detector**, donde encontrarás las mejores herramientas y productos de alta calidad para tus proyectos. Navega a través de nuestro catálogo para descubrir las últimas novedades en herramientas y productos de cacería, detección y más.
