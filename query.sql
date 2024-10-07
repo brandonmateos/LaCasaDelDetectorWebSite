@@ -24,4 +24,4 @@ INSERT INTO products (name, brand, code, category, availability, price, image) V
 ('Tecknetics Eurotek Pro', 'Teknetics', 'EURO-PRO', 'Detector de Metales', TRUE, 9999.99, 'img/products/tekneticsEurotekPro.webp'),
 ('Rifle Beeman / Marksman', 'Beeman', '2063', 'Rifle Aire', TRUE, 9999.99, 'img/products/rifleBeeman.webp'),
 ('Rifle Pcp V-raptor Polimero Regulado Cal 5.5', 'Aztk', 'Pr900S', 'Rifle Pcp', TRUE, 9999.99, 'img/products/riflePcpAztk.webp'),
-('Pistola Deportiva Cañon Corto Cal 4.5 ', 'Mendoza', 'PK-62-C-0227', 'Pistola de Salva', TRUE, 9999.99, 'PK-62-C-0227.webp');
+('Pistola Deportiva Cañon Corto Cal 4.5 ', 'Mendoza', 'PK-62-C-0227', 'Pistola de Salva', TRUE, 9999.99, 'img/products/PK-62-C-0227.webp');

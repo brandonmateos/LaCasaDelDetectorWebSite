@@ -59,7 +59,7 @@ body {
 }
 
 .backTools {
-  background-image: url("/img/herramientas.png");
+  background-image: url("/img/herramientas.webp");
   /*expandir imagen e toda la pantalla*/
   background-size: cover;
   /*centrar imagen*/
@@ -84,7 +84,7 @@ body {
 }
 
 .backHunter {
-  background-image: url("/img/caceria.jpg");
+  background-image: url("/img/caceria.webp");
   /*expandir imagen e toda la pantalla*/
   background-size: cover;
   /*centrar imagen*/
@@ -94,7 +94,7 @@ body {
 }
 
 .backDetetion {
-  background-image: url("/img/detection2.jpg");
+  background-image: url("/img/detection2.webp");
   /*expandir imagen e toda la pantalla*/
   background-size: cover;
   /*centrar imagen*/
