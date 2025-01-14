@@ -4,14 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Ferretería y Electrónica La Casa del Detector - Herramientas y productos de alta calidad para tus proyectos.">
+  <meta name="keywords" content="ferretería, truper, electrónica, herramientas, detectores de metales, artículos de cacería, productos electrónicos, caceria, detectores, la casa del detector">
   <meta name="google-site-verification" content="bUYQS0hyCdurn_Q5qiuIhBWUm4_9Zz57PiuAnNQIXpI" />
   <title>La Casa del Detector - Ferreteria y Electronica</title>
-  <meta name="description" content="Ferretería y Electrónica La Casa del Detector: Especialistas en herramientas, detectores de metales, artículos de cacería y productos electrónicos. Encuentra todo lo que necesitas para tus proyectos de ferretería y tecnología, con los mejores detectores de metales."/>
+  <meta name="description" content="Ferretería y Electrónica La Casa del Detector: Herramientas, detectores de metales, artículos de cacería y productos electrónicos. Encuentra todo lo que necesitas para tus proyectos de ferretería y tecnología, con los mejores detectores de metales."/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="icon" href="img/logoFBlanco.webp" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <link rel="stylesheet" href="/styles/index.css">
 </head>
 
@@ -410,23 +411,23 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"></script>
 
-    <script>
-      function initMap() {
-        var myLatLng = { lat: 19.249603254044395, lng: -103.72005839770515 }; // Coordenadas de Filomeno Medina #479, Colima
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 16,
-          center: myLatLng
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var map = L.map('map').setView([19.2496, -103.7200], 16);
+    
+            // Agregar capa de OpenStreetMap
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+    
+            // Añadir marcador
+            L.marker([19.2496, -103.7200]).addTo(map)
+                .bindPopup('Ferretería y Electrónica La Casa del Detector')
+                .openPopup();
         });
-
-        var marker = new google.maps.Marker({
-          position: myLatLng,
-          map: map,
-          title: 'Ferretería y Electrónica La Casa del Detector'
-        });
-      }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1Z7P-wy1uiwrLJyK2AkCfkRK8Lvuccvk&callback=initMap"
-      async defer></script>
+
 </body>
 
 </html>
